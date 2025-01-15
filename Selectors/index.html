@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <h1>My Website</h1>
+        <h2>My Website 2</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="featured-section" class="container">
+            <h2 class="section-title">Featured Content</h2>
+            <article class="featured-item">
+                <h3 class="article-title">Article One</h3>
+                <p class="lead-paragraph">This is a lead paragraph within the article.  It has some <a href="#">link</a>.</p>
+                <p>This is a regular paragraph.</p>
+                <button class="btn-primary">Read More</button>
+            </article>
+            <article class="featured-item-special">
+              <h3 class="article-title">Article Two</h3>
+                <p> This is another article, here we have a <span class="highlight">highlighted</span> text, and another <a href="#">link</a>.</p>
+                <p class="important-paragraph"> This paragraph is important</p>
+                 <ul>
+                     <li>Item 1</li>
+                     <li>Item 2</li>
+                 </ul>
+                <button class="btn-secondary">View Details</button>
+            </article>
+        </section>
+
+        <section class="container">
+            <h2 class="section-title">Other Articles</h2>
+             <div class="article-container">
+              <article>
+                  <h3>Article Three</h3>
+                    <p>This is article 3 content</p>
+                </article>
+                 <article>
+                      <h3>Article Four</h3>
+                        <p>This is article 4 content</p>
+                </article>
+               </div>
+              <div class="ad-box">
+                 <h3>Advertisement</h3>
+                 <button class="ad-btn">Click Here</button>
+              </div>
+        </section>
+    </main>
+    <footer>
+       <p> © 2023 My Website</p>
+    </footer>
+
+    <form>
+        <input type="text" placeholder="Your Name" />
+        <input type="email" placeholder="Your Email" />
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="notifications">
+        <p class="notification error">Error: Something went wrong!</p>
+        <p class="notification success">Success: You have subscribed!</p>
+    </div>
+
+    <div id="image-container">
+        <img src="placeholder.png" alt="Example Image" data-info="This is a sample image"/>
+        <img src="placeholder2.png" alt="Another Sample Image" data-info="Another sample image"/>
+    </div>
+
+    <ul id="list-example">
+      <li>List Item 1</li>
+      <li>List Item 2</li>
+      <li>List Item 3</li>
+      <li class="last-item">List Item 4</li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+#main-header{
+    color: aqua;
+    padding: 0%;
+    border: 10px solid black;
+}
+
+a[href] {
+    color: gold;
+}
+
+ul>li{
+    background-color: blue;
+
+}
+
+#featured-section h2{
+    background-color: black;
+}
+
+.featured-item-special h3 + p{
+    color: aquamarine;
+}
+
+.btn-secondary:hover{
+    background-color: brown;
+    
+
+}
+
+a[href]:visited{
+    color: rgb(230, 20, 20);
+}
+
+h1::first-letter{
+    color: brown;
+}
+h2::selection{
+    background-color: gold;
+}
