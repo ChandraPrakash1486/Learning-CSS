@@ -1,0 +1,113 @@
+body {
+  background-color: black;
+}
+
+.block-container {
+  background-color: black;
+  border: 2px solid #000000;
+  padding: 10px;
+}
+
+.block-item {
+  display: block; /* Explicit declaration, but is default for divs and p */
+  background-color: #d41616;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 80%; /* Block elements can take a width */
+}
+
+.inline-container {
+  border: 2px solid #ccc;
+  padding: 100px;
+  margin: 10px;
+}
+
+.inline-item {
+  display: inline; /* default for span, a, img, etc. */
+  background-color: #e0f0e0;
+  padding: 10px;
+  margin: 50px;
+}
+
+.inline-block-container {
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.inline-block-item {
+  display: inline-block;
+  background-color: #f0e0f0;
+  padding: 10px;
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.flex-container {
+  display: flex; /* Enable Flexbox */
+  flex-direction: row; /* Set main axis to horizontal */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center; /* Center items vertically on cross axis */
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.flex-item {
+  background-color: #e0e0f0;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row; /* or column */
+  flex-wrap: nowrap; /* or nowrap */
+  justify-content: center;
+  /* align-items: stretch; */
+  gap: 20px;
+  border: 2px solid #ccc;
+  padding: 10px;
+}
+
+.flex-item {
+  flex: 2 1 10px; /* grow, shrink, basis */
+  background-color: #f50000;
+  padding: 10px;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  padding: 10px;
+  justify-content: space-between; /* Space items evenly */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.login-btn {
+  background-color: #007bff; /* Button color */
+  border-radius: 5px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  flex-shrink: 1; /* Prevent navigation links from shrinking */
+}
+
+.login-btn {
+  flex-basis: auto;
+  background-color: #007bff;
+  border-radius: 5px;
+  flex-grow: 1; /* Make it expand */
+  text-align: center;
+  flex-shrink: 0; /* Make it shrink */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+
+/* Make last item to occupy all row */
