@@ -1,0 +1,14 @@
+.sentence-container {
+    border: 1px solid #ccc;
+    padding-left: 20px; /* Physical left padding */
+    padding-right: 50px;/* Physical right padding */
+    text-align: left;/*physical transition-property*/
+}
+
+/* Now using Logical Properties on the same sentense */
+.sentence-container {
+    border: 1px solid #ccc;
+    padding-inline-start: 20px; /* Logical start padding */
+    padding-inline-end: 50px; /* logical end padding */
+    text-align: start;/*logical transition-property*/
+}
